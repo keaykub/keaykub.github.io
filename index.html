@@ -114,7 +114,7 @@ xxxxxx</textarea>
                 <textarea class="form-control" id="myTextarea9997" rows="3">
 กลุ่มพูดคุย ไว้สอบถามโค้ช
 
-https://t.me/+MF1FLVGGVZpjZThl</textarea>
+https://t.me/+mb48sTMIwm42NTVl</textarea>
                 <button class="btn btn-primary mt-2" onclick="copyToClipboard9997()">คัดลอกข้อความ</button>
             </div>
         </div>
@@ -296,6 +296,11 @@ https://discord.gg/hTgNVdkD</textarea>
 รายละเอียดสามารถขอดูเพิ่มเติมได้ครับผม </textarea>
               <button class="btn btn-primary mt-2" onclick="copyToClipboardother3()">คัดลอกข้อความ</button>
           </div>
+          <div class="text-container">
+            <h4>แก้ไขเอง <span class="badge bg-secondary">  2  </span></h4>
+            <textarea class="form-control" id="myTextareaother4" rows="3"></textarea>
+            <button class="btn btn-primary mt-2" onclick="copyToClipboardother4()">คัดลอกข้อความ</button>
+        </div>
         </div>
     </div>
 </div>
@@ -426,6 +431,12 @@ https://discord.gg/hTgNVdkD</textarea>
 
     function copyToClipboardother3() {
       var copyText = document.getElementById("myTextareaother3");
+      copyText.select();
+      document.execCommand("copy");
+    }
+
+    function copyToClipboardother4() {
+      var copyText = document.getElementById("myTextareaother4");
       copyText.select();
       document.execCommand("copy");
     }
